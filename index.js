@@ -75,72 +75,71 @@ instance.prototype.actions = function(system) {
 			label: 'Cut',
 			options: [
 				{
-					 type: 'textinput',
-					 label: 'Mix',
-					 id: 'mix',
-					 default: 1,
-					 regex: self.REGEX_SIGNED_NUMBER
+					type: 'textinput',
+					label: 'Mix',
+					id: 'mix',
+					default: 1,
+					regex: self.REGEX_SIGNED_NUMBER
 				},
 				{
-					 type: 'textinput',
-					 label: 'Layer',
-					 id: 'layer',
-					 default: 1,
-					 regex: self.REGEX_SIGNED_NUMBER
+					type: 'textinput',
+					label: 'Layer',
+					id: 'layer',
+					default: 1,
+					regex: self.REGEX_SIGNED_NUMBER
 				},
 				{
-					 type: 'textinput',
-					 label: 'Bank Nr',
-					 id: 'bank',
-					 default: 0,
-					 regex: self.REGEX_SIGNED_NUMBER
+					type: 'textinput',
+					label: 'Bank Nr',
+					id: 'bank',
+					default: 0,
+					regex: self.REGEX_SIGNED_NUMBER
 				},
 				{
-					 type: 'textinput',
-					 label: 'Slot Nr',
-					 id: 'slot',
-					 default: 0,
-					 regex: self.REGEX_SIGNED_NUMBER
-				}
-			]
+					type: 'textinput',
+					label: 'Slot Nr',
+					id: 'slot',
+					default: 0,
+					regex: self.REGEX_SIGNED_NUMBER
+				}]
 		},
 		'fade': {
 			label: 'Fade',
 			options: [
 				{
-					 type: 'textinput',
-					 label: 'Mix',
-					 id: 'mix',
-					 default: 1,
-					 regex: self.REGEX_SIGNED_NUMBER
+					type: 'textinput',
+					label: 'Mix',
+					id: 'mix',
+					default: 1,
+					regex: self.REGEX_SIGNED_NUMBER
 				},
 				{
-					 type: 'textinput',
-					 label: 'Layer',
-					 id: 'layer',
-					 default: 1,
-					 regex: self.REGEX_SIGNED_NUMBER
-				},
-			  {
-				  type: 'textinput',
-			  	label: 'Fade Time (In ms)',
-			  	id: 'time',
-		  		default: 1000,
-				  regex: self.REGEX_SIGNED_NUMBER
-			  },
-				{
-					 type: 'textinput',
-					 label: 'Bank Nr',
-					 id: 'bank',
-					 default: 0,
-					 regex: self.REGEX_SIGNED_NUMBER
+					type: 'textinput',
+					label: 'Layer',
+					id: 'layer',
+					default: 1,
+					regex: self.REGEX_SIGNED_NUMBER
 				},
 				{
-					 type: 'textinput',
-					 label: 'Slot Nr',
-					 id: 'slot',
-					 default: 0,
-					 regex: self.REGEX_SIGNED_NUMBER
+					type: 'textinput',
+					label: 'Fade Time (In ms)',
+					id: 'time',
+					default: 1000,
+					regex: self.REGEX_SIGNED_NUMBER
+				},
+				{
+					type: 'textinput',
+					label: 'Bank Nr',
+					id: 'bank',
+					default: 0,
+					regex: self.REGEX_SIGNED_NUMBER
+				},
+				{
+					type: 'textinput',
+					label: 'Slot Nr',
+					id: 'slot',
+					default: 0,
+					regex: self.REGEX_SIGNED_NUMBER
 				}
 			]
 		},
@@ -148,18 +147,18 @@ instance.prototype.actions = function(system) {
 			label: 'Fade Through Black',
 			options: [
 				{
-					 type: 'textinput',
-					 label: 'Mix',
-					 id: 'mix',
-					 default: 1,
-					 regex: self.REGEX_SIGNED_NUMBER
+					type: 'textinput',
+					label: 'Mix',
+					id: 'mix',
+					default: 1,
+					regex: self.REGEX_SIGNED_NUMBER
 				},
 				{
-					 type: 'textinput',
-					 label: 'Layer',
-					 id: 'layer',
-					 default: 1,
-					 regex: self.REGEX_SIGNED_NUMBER
+					type: 'textinput',
+					label: 'Layer',
+					id: 'layer',
+					default: 1,
+					regex: self.REGEX_SIGNED_NUMBER
 				},
 				{
 					type: 'textinput',
@@ -169,18 +168,18 @@ instance.prototype.actions = function(system) {
 					regex: self.REGEX_SIGNED_NUMBER
 				},
 				{
-					 type: 'textinput',
-					 label: 'Bank Nr',
-					 id: 'bank',
-					 default: 0,
-					 regex: self.REGEX_SIGNED_NUMBER
+					type: 'textinput',
+					label: 'Bank Nr',
+					id: 'bank',
+					default: 0,
+					regex: self.REGEX_SIGNED_NUMBER
 				},
 				{
-					 type: 'textinput',
-					 label: 'Slot Nr',
-					 id: 'slot',
-					 default: 0,
-					 regex: self.REGEX_SIGNED_NUMBER
+					type: 'textinput',
+					label: 'Slot Nr',
+					id: 'slot',
+					default: 0,
+					regex: self.REGEX_SIGNED_NUMBER
 				}
 			]
 		},
@@ -188,18 +187,18 @@ instance.prototype.actions = function(system) {
 			label: 'Fade Up First',
 			options: [
 				{
-					 type: 'textinput',
-					 label: 'Mix',
-					 id: 'mix',
-					 default: 1,
-					 regex: self.REGEX_SIGNED_NUMBER
+					type: 'textinput',
+					label: 'Mix',
+					id: 'mix',
+					default: 1,
+					regex: self.REGEX_SIGNED_NUMBER
 				},
 				{
-					 type: 'textinput',
-					 label: 'Layer',
-					 id: 'layer',
-					 default: 1,
-					 regex: self.REGEX_SIGNED_NUMBER
+					type: 'textinput',
+					label: 'Layer',
+					id: 'layer',
+					default: 1,
+					regex: self.REGEX_SIGNED_NUMBER
 				},
 				{
 					type: 'textinput',
@@ -209,18 +208,18 @@ instance.prototype.actions = function(system) {
 					regex: self.REGEX_SIGNED_NUMBER
 				},
 				{
-					 type: 'textinput',
-					 label: 'Bank Nr',
-					 id: 'bank',
-					 default: 0,
-					 regex: self.REGEX_SIGNED_NUMBER
+					type: 'textinput',
+					label: 'Bank Nr',
+					id: 'bank',
+					default: 0,
+					regex: self.REGEX_SIGNED_NUMBER
 				},
 				{
-					 type: 'textinput',
-					 label: 'Slot Nr',
-					 id: 'slot',
-					 default: 0,
-					 regex: self.REGEX_SIGNED_NUMBER
+					type: 'textinput',
+					label: 'Slot Nr',
+					id: 'slot',
+					default: 0,
+					regex: self.REGEX_SIGNED_NUMBER
 				}
 			]
 		},
@@ -228,18 +227,18 @@ instance.prototype.actions = function(system) {
 			label: 'Snap Start',
 			options: [
 				{
-					 type: 'textinput',
-					 label: 'Mix',
-					 id: 'mix',
-					 default: 1,
-					 regex: self.REGEX_SIGNED_NUMBER
+					type: 'textinput',
+					label: 'Mix',
+					id: 'mix',
+					default: 1,
+					regex: self.REGEX_SIGNED_NUMBER
 				},
 				{
-					 type: 'textinput',
-					 label: 'Layer',
-					 id: 'layer',
-					 default: 1,
-					 regex: self.REGEX_SIGNED_NUMBER
+					type: 'textinput',
+					label: 'Layer',
+					id: 'layer',
+					default: 1,
+					regex: self.REGEX_SIGNED_NUMBER
 				},
 				{
 					type: 'textinput',
@@ -249,18 +248,18 @@ instance.prototype.actions = function(system) {
 					regex: self.REGEX_SIGNED_NUMBER
 				},
 				{
-					 type: 'textinput',
-					 label: 'Bank Nr',
-					 id: 'bank',
-					 default: 0,
-					 regex: self.REGEX_SIGNED_NUMBER
+					type: 'textinput',
+					label: 'Bank Nr',
+					id: 'bank',
+					default: 0,
+					regex: self.REGEX_SIGNED_NUMBER
 				},
 				{
-					 type: 'textinput',
-					 label: 'Slot Nr',
-					 id: 'slot',
-					 default: 0,
-					 regex: self.REGEX_SIGNED_NUMBER
+					type: 'textinput',
+					label: 'Slot Nr',
+					id: 'slot',
+					default: 0,
+					regex: self.REGEX_SIGNED_NUMBER
 				}
 			]
 		},
@@ -268,18 +267,18 @@ instance.prototype.actions = function(system) {
 			label: 'Snap End',
 			options: [
 				{
-					 type: 'textinput',
-					 label: 'Mix',
-					 id: 'mix',
-					 default: 1,
-					 regex: self.REGEX_SIGNED_NUMBER
+					type: 'textinput',
+					label: 'Mix',
+					id: 'mix',
+					default: 1,
+					regex: self.REGEX_SIGNED_NUMBER
 				},
 				{
-					 type: 'textinput',
-					 label: 'Layer',
-					 id: 'layer',
-					 default: 1,
-					 regex: self.REGEX_SIGNED_NUMBER
+					type: 'textinput',
+					label: 'Layer',
+					id: 'layer',
+					default: 1,
+					regex: self.REGEX_SIGNED_NUMBER
 				},
 				{
 					type: 'textinput',
@@ -289,18 +288,18 @@ instance.prototype.actions = function(system) {
 					regex: self.REGEX_SIGNED_NUMBER
 				},
 				{
-					 type: 'textinput',
-					 label: 'Bank Nr',
-					 id: 'bank',
-					 default: 0,
-					 regex: self.REGEX_SIGNED_NUMBER
+					type: 'textinput',
+					label: 'Bank Nr',
+					id: 'bank',
+					default: 0,
+					regex: self.REGEX_SIGNED_NUMBER
 				},
 				{
-					 type: 'textinput',
-					 label: 'Slot Nr',
-					 id: 'slot',
-					 default: 0,
-					 regex: self.REGEX_SIGNED_NUMBER
+					type: 'textinput',
+					label: 'Slot Nr',
+					id: 'slot',
+					default: 0,
+					regex: self.REGEX_SIGNED_NUMBER
 				}
 			]
 		},
@@ -308,17 +307,17 @@ instance.prototype.actions = function(system) {
 			label: 'Send OSC integer',
 			options: [
 				{
-					 type: 'textinput',
-					 label: 'OSC Path',
-					 id: 'path',
-					 default: '/osc/path'
+					type: 'textinput',
+					label: 'OSC Path',
+					id: 'path',
+					default: '/osc/path'
 				},
 				{
-					 type: 'textinput',
-					 label: 'Value',
-					 id: 'int',
-					 default: 1,
-					 regex: self.REGEX_SIGNED_NUMBER
+					type: 'textinput',
+					label: 'Value',
+					id: 'int',
+					default: 1,
+					regex: self.REGEX_SIGNED_NUMBER
 				}
 			]
 		}
@@ -327,33 +326,36 @@ instance.prototype.actions = function(system) {
 
 instance.prototype.action = function(action) {
 	var self = this;
+	var type;
+	var preset;
+	var time;
 
 	debug('action: ', action);
 
 	if (action.action == 'cut') {
-		var type = {
+		type = {
 				type: "i",
 				value: 0
 		};
-		var preset = {
+		preset = {
 				type: "i",
 				value: parseInt(action.options.bank, 10) * 256 + parseInt(action.options.slot, 10)
 		};
-		console.log(preset);
+		//console.log(preset);
 		self.system.emit('osc_send', self.config.host, self.config.port, '/Mix' + action.options.mix + '/Layer' + action.options.layer + '/Presets/FadeType', [ type ]);
 		self.system.emit('osc_send', self.config.host, self.config.port, '/Mix' + action.options.mix + '/Layer' + action.options.layer + '/Presets/PresetSelect', [ preset ]);
 	}
 
-	if (action.action == 'fade') {
-		var type = {
+	else if (action.action == 'fade') {
+		type = {
 				type: "i",
 				value: 1
 		};
-		var time = {
+		time = {
 				type: "i",
 				value: parseInt(action.options.time)
 		};
-		var preset = {
+		preset = {
 				type: "i",
 				value: parseInt(action.options.bank, 10) * 256 + parseInt(action.options.slot, 10)
 		};
@@ -362,16 +364,16 @@ instance.prototype.action = function(action) {
 		self.system.emit('osc_send', self.config.host, self.config.port, '/Mix' + action.options.mix + '/Layer' + action.options.layer + '/Presets/PresetSelect', [ preset ]);
 	}
 
-	if (action.action == 'ftb') {
-		var type = {
+	else if (action.action == 'ftb') {
+		type = {
 				type: "i",
 				value: 2
 		};
-		var time = {
+		time = {
 				type: "i",
 				value: parseInt(action.options.time)
 		};
-		var preset = {
+		preset = {
 				type: "i",
 				value: parseInt(action.options.bank, 10) * 256 + parseInt(action.options.slot, 10)
 		};
@@ -380,16 +382,16 @@ instance.prototype.action = function(action) {
 		self.system.emit('osc_send', self.config.host, self.config.port, '/Mix' + action.options.mix + '/Layer' + action.options.layer + '/Presets/PresetSelect', [ preset ]);
 	}
 
-	if (action.action == 'fade_up_first') {
-		var type = {
+	else if (action.action == 'fade_up_first') {
+		type = {
 				type: "i",
 				value: 3
 		};
-		var time = {
+		time = {
 				type: "i",
 				value: parseInt(action.options.time)
 		};
-		var preset = {
+		preset = {
 				type: "i",
 				value: parseInt(action.options.bank, 10) * 256 + parseInt(action.options.slot, 10)
 		};
@@ -397,16 +399,17 @@ instance.prototype.action = function(action) {
 		self.system.emit('osc_send', self.config.host, self.config.port, '/Mix' + action.options.mix + '/Layer' + action.options.layer + '/Presets/FadeTime', [ time ]);
 		self.system.emit('osc_send', self.config.host, self.config.port, '/Mix' + action.options.mix + '/Layer' + action.options.layer + '/Presets/PresetSelect', [ preset ]);
 	}
-	if (action.action == 'snap_start') {
-		var type = {
+
+	else if (action.action == 'snap_start') {
+		type = {
 				type: "i",
 				value: 4
 		};
-		var time = {
+		time = {
 				type: "i",
 				value: parseInt(action.options.time)
 		};
-		var preset = {
+		preset = {
 				type: "i",
 				value: parseInt(action.options.bank, 10) * 256 + parseInt(action.options.slot, 10)
 		};
@@ -414,16 +417,16 @@ instance.prototype.action = function(action) {
 		self.system.emit('osc_send', self.config.host, self.config.port, '/Mix' + action.options.mix + '/Layer' + action.options.layer + '/Presets/FadeTime', [ time ]);
 		self.system.emit('osc_send', self.config.host, self.config.port, '/Mix' + action.options.mix + '/Layer' + action.options.layer + '/Presets/PresetSelect', [ preset ]);
 	}
-	if (action.action == 'snap_end') {
-		var type = {
+	else if (action.action == 'snap_end') {
+		type = {
 				type: "i",
 				value: 5
 		};
-		var time = {
+		time = {
 				type: "i",
 				value: parseInt(action.options.time)
 		};
-		var preset = {
+		preset = {
 				type: "i",
 				value: parseInt(action.options.bank, 10) * 256 + parseInt(action.options.slot, 10)
 		};
@@ -431,7 +434,8 @@ instance.prototype.action = function(action) {
 		self.system.emit('osc_send', self.config.host, self.config.port, '/Mix' + action.options.mix + '/Layer' + action.options.layer + '/Presets/FadeTime', [ time ]);
 		self.system.emit('osc_send', self.config.host, self.config.port, '/Mix' + action.options.mix + '/Layer' + action.options.layer + '/Presets/PresetSelect', [ preset ]);
 	}
-	if (action.action == 'send_int') {
+
+	else if (action.action == 'send_int') {
 		var bol = {
 				type: "i",
 				value: parseInt(action.options.int)
