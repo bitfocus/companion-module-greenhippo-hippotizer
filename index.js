@@ -76,7 +76,7 @@ instance.prototype.destroy = function() {
 
 instance.prototype.actions = function(system) {
 	var self = this;
-	self.system.emit('instance_actions', self.id, {
+	self.setActions({
 		'cut': {
 			label: 'Cut',
 			options: [
@@ -348,8 +348,8 @@ instance.prototype.action = function(action) {
 				value: parseInt(action.options.bank, 10) * 256 + parseInt(action.options.slot, 10)
 		};
 		//console.log(preset);
-		self.system.emit('osc_send', self.config.host, self.config.port, '/Mix' + action.options.mix + '/Layer' + action.options.layer + '/Presets/FadeType', [ type ]);
-		self.system.emit('osc_send', self.config.host, self.config.port, '/Mix' + action.options.mix + '/Layer' + action.options.layer + '/Presets/PresetSelect', [ preset ]);
+		self.oscSend(self.config.host, self.config.port, '/Mix' + action.options.mix + '/Layer' + action.options.layer + '/Presets/FadeType', [ type ]);
+		self.oscSend(self.config.host, self.config.port, '/Mix' + action.options.mix + '/Layer' + action.options.layer + '/Presets/PresetSelect', [ preset ]);
 	}
 
 	else if (action.action == 'fade') {
@@ -365,9 +365,9 @@ instance.prototype.action = function(action) {
 				type: "i",
 				value: parseInt(action.options.bank, 10) * 256 + parseInt(action.options.slot, 10)
 		};
-		self.system.emit('osc_send', self.config.host, self.config.port, '/Mix' + action.options.mix + '/Layer' + action.options.layer + '/Presets/FadeType', [ type ]);
-		self.system.emit('osc_send', self.config.host, self.config.port, '/Mix' + action.options.mix + '/Layer' + action.options.layer + '/Presets/FadeTime', [ time ]);
-		self.system.emit('osc_send', self.config.host, self.config.port, '/Mix' + action.options.mix + '/Layer' + action.options.layer + '/Presets/PresetSelect', [ preset ]);
+		self.oscSend(self.config.host, self.config.port, '/Mix' + action.options.mix + '/Layer' + action.options.layer + '/Presets/FadeType', [ type ]);
+		self.oscSend(self.config.host, self.config.port, '/Mix' + action.options.mix + '/Layer' + action.options.layer + '/Presets/FadeTime', [ time ]);
+		self.oscSend(self.config.host, self.config.port, '/Mix' + action.options.mix + '/Layer' + action.options.layer + '/Presets/PresetSelect', [ preset ]);
 	}
 
 	else if (action.action == 'ftb') {
@@ -383,9 +383,9 @@ instance.prototype.action = function(action) {
 				type: "i",
 				value: parseInt(action.options.bank, 10) * 256 + parseInt(action.options.slot, 10)
 		};
-		self.system.emit('osc_send', self.config.host, self.config.port, '/Mix' + action.options.mix + '/Layer' + action.options.layer + '/Presets/FadeType', [ type ]);
-		self.system.emit('osc_send', self.config.host, self.config.port, '/Mix' + action.options.mix + '/Layer' + action.options.layer + '/Presets/FadeTime', [ time ]);
-		self.system.emit('osc_send', self.config.host, self.config.port, '/Mix' + action.options.mix + '/Layer' + action.options.layer + '/Presets/PresetSelect', [ preset ]);
+		self.oscSend(self.config.host, self.config.port, '/Mix' + action.options.mix + '/Layer' + action.options.layer + '/Presets/FadeType', [ type ]);
+		self.oscSend(self.config.host, self.config.port, '/Mix' + action.options.mix + '/Layer' + action.options.layer + '/Presets/FadeTime', [ time ]);
+		self.oscSend(self.config.host, self.config.port, '/Mix' + action.options.mix + '/Layer' + action.options.layer + '/Presets/PresetSelect', [ preset ]);
 	}
 
 	else if (action.action == 'fade_up_first') {
@@ -401,9 +401,9 @@ instance.prototype.action = function(action) {
 				type: "i",
 				value: parseInt(action.options.bank, 10) * 256 + parseInt(action.options.slot, 10)
 		};
-		self.system.emit('osc_send', self.config.host, self.config.port, '/Mix' + action.options.mix + '/Layer' + action.options.layer + '/Presets/FadeType', [ type ]);
-		self.system.emit('osc_send', self.config.host, self.config.port, '/Mix' + action.options.mix + '/Layer' + action.options.layer + '/Presets/FadeTime', [ time ]);
-		self.system.emit('osc_send', self.config.host, self.config.port, '/Mix' + action.options.mix + '/Layer' + action.options.layer + '/Presets/PresetSelect', [ preset ]);
+		self.oscSend(self.config.host, self.config.port, '/Mix' + action.options.mix + '/Layer' + action.options.layer + '/Presets/FadeType', [ type ]);
+		self.oscSend(self.config.host, self.config.port, '/Mix' + action.options.mix + '/Layer' + action.options.layer + '/Presets/FadeTime', [ time ]);
+		self.oscSend(self.config.host, self.config.port, '/Mix' + action.options.mix + '/Layer' + action.options.layer + '/Presets/PresetSelect', [ preset ]);
 	}
 
 	else if (action.action == 'snap_start') {
@@ -419,9 +419,9 @@ instance.prototype.action = function(action) {
 				type: "i",
 				value: parseInt(action.options.bank, 10) * 256 + parseInt(action.options.slot, 10)
 		};
-		self.system.emit('osc_send', self.config.host, self.config.port, '/Mix' + action.options.mix + '/Layer' + action.options.layer + '/Presets/FadeType', [ type ]);
-		self.system.emit('osc_send', self.config.host, self.config.port, '/Mix' + action.options.mix + '/Layer' + action.options.layer + '/Presets/FadeTime', [ time ]);
-		self.system.emit('osc_send', self.config.host, self.config.port, '/Mix' + action.options.mix + '/Layer' + action.options.layer + '/Presets/PresetSelect', [ preset ]);
+		self.oscSend(self.config.host, self.config.port, '/Mix' + action.options.mix + '/Layer' + action.options.layer + '/Presets/FadeType', [ type ]);
+		self.oscSend(self.config.host, self.config.port, '/Mix' + action.options.mix + '/Layer' + action.options.layer + '/Presets/FadeTime', [ time ]);
+		self.oscSend(self.config.host, self.config.port, '/Mix' + action.options.mix + '/Layer' + action.options.layer + '/Presets/PresetSelect', [ preset ]);
 	}
 	else if (action.action == 'snap_end') {
 		type = {
@@ -436,9 +436,9 @@ instance.prototype.action = function(action) {
 				type: "i",
 				value: parseInt(action.options.bank, 10) * 256 + parseInt(action.options.slot, 10)
 		};
-		self.system.emit('osc_send', self.config.host, self.config.port, '/Mix' + action.options.mix + '/Layer' + action.options.layer + '/Presets/FadeType', [ type ]);
-		self.system.emit('osc_send', self.config.host, self.config.port, '/Mix' + action.options.mix + '/Layer' + action.options.layer + '/Presets/FadeTime', [ time ]);
-		self.system.emit('osc_send', self.config.host, self.config.port, '/Mix' + action.options.mix + '/Layer' + action.options.layer + '/Presets/PresetSelect', [ preset ]);
+		self.oscSend(self.config.host, self.config.port, '/Mix' + action.options.mix + '/Layer' + action.options.layer + '/Presets/FadeType', [ type ]);
+		self.oscSend(self.config.host, self.config.port, '/Mix' + action.options.mix + '/Layer' + action.options.layer + '/Presets/FadeTime', [ time ]);
+		self.oscSend(self.config.host, self.config.port, '/Mix' + action.options.mix + '/Layer' + action.options.layer + '/Presets/PresetSelect', [ preset ]);
 	}
 
 	else if (action.action == 'send_int') {
@@ -446,7 +446,7 @@ instance.prototype.action = function(action) {
 				type: "i",
 				value: parseInt(action.options.int)
 		};
-		self.system.emit('osc_send', self.config.host, self.config.port, action.options.path, [ bol ]);
+		self.oscSend(self.config.host, self.config.port, action.options.path, [ bol ]);
 	}
 
 };
